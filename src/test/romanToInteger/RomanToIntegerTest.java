@@ -26,27 +26,13 @@ public class RomanToIntegerTest {
 
     @DataProvider
     public static Object[][] data() {
-        return new Object[][]{
-                {"XXX", 30},
-                {"IX", 9},
-                {"VIII", 8},
-                {"LVIII", 58},
-                {"MCMXCIV", 1994},
-                {"MMMCMXCIX", 3999},
-                {"I", 1}
+        return new Object[][]{{"XXX", 30}, {"IX", 9}, {"VIII", 8}, {"LVIII", 58}, {"MCMXCIV", 1994}, {"MMMCMXCIX", 3999}, {"I", 1}
         };
     }
 
     @DataProvider
     public static Object[][] exeption() {
-        return new Object[][]{
-                {"XXXX"},
-                {"IIX"},
-                {"VIIII"},
-                {""},
-                {"IM"},
-                {"XDM"},
-                {"XM"}
+        return new Object[][]{{"XXXX"}, {"IIX"}, {"VIIII"}, {""}, {"IM"}, {"XDM"}, {"XM"}
         };
     }
 
